@@ -1,0 +1,31 @@
+/*
+ * double_link_list3-7.c
+ *
+ *  Created on: 2018. 1. 30.
+ *      Author: CANDH
+ */
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _NODE
+{
+	char Data;
+	struct _NODE *Next;
+	struct _NODE *Prev;
+
+} NODE;
+
+NODE *head, *end, *temp;
+NODE *temp1, *temp2, *temp3, *temp4;
+
+void Initialize(void);
+void InsertNode(NODE *);
+void DeleteNode(NODE *);
+
+void Initialize(void)
+{
+
+}

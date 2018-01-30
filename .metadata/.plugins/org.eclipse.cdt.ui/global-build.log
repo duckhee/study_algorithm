@@ -1,0 +1,8 @@
+12:11:00 **** Incremental Build of configuration Debug for project study ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\double_link_list3-7.o" "..\\src\\double_link_list3-7.c" 
+..\src\double_link_list3-7.c:102:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o study.exe "src\\double_link_list3-7.o" 
+Info: Nothing to build for study
