@@ -1,8 +1,9 @@
-12:11:00 **** Incremental Build of configuration Debug for project study ****
+15:47:53 **** Incremental Build of configuration Debug for project study ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\double_link_list3-7.o" "..\\src\\double_link_list3-7.c" 
-..\src\double_link_list3-7.c:102:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-g++ -o study.exe "src\\double_link_list3-7.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
+..\src\stack4-4.c: In function 'Push4_4':
+..\src\stack4-4.c:31:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
+  Top = (Top++) % MAX;
+      ^
+g++ -o study.exe "src\\binary_tree4-5.o" "src\\stack4-4.o" 
 Info: Nothing to build for study

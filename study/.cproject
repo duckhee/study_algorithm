@@ -41,7 +41,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -87,7 +87,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

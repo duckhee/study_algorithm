@@ -1,0 +1,39 @@
+/*
+ * binary_tree4-5.c
+ *
+ *  Created on: 2018. 1. 30.
+ *      Author: CANDH
+ */
+
+
+
+#include "node4-3.h"
+
+extern void InitializeStack4_4(void);
+extern void Push4_4(NODE *);
+extern NODE *Pop4_4(void);
+extern int IsStackEmpty4_4(void);
+
+void InitializeTree4_5(void);
+void MakeTree4_5(void);
+void Traverse4_5(NODE *);
+void Visit4_5(NODE *);
+
+NODE *Parent, *LeftChild, *RightChild;
+NODE *HeadNode, *EndNode;
+
+void InitializeTree4_5(void)
+{
+	HeadNode = (NODE *)malloc(sizeof(NODE));
+	EndNode = (NODE *)malloc(sizeof(NODE));
+
+	HeadNode->Left = EndNode;
+	HeadNode->Right = EndNode;
+
+	EndNode->Left = EndNode;
+	EndNode->Right = EndNode;
+
+}
+void MakeTree4_5(void);
+void Traverse4_5(NODE *);
+void Visit4_5(NODE *);

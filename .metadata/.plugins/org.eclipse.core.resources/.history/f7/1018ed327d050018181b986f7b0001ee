@@ -1,0 +1,50 @@
+/*
+ * stack3-12.c
+ *
+ *  Created on: 2018. 1. 30.
+ *      Author: CANDH
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct _NODE
+{
+	int Data;
+	struct _NODE *Next;
+
+} NODE;
+
+NODE *head, *end;
+NODE *ptrNode;
+
+void InitializeStack(void);
+void Push(int);
+void Pop(void);
+void DisplayStack(void);
+
+void InitializeStack(void)
+{
+	head = (NODE *)malloc(sizeof(NODE));
+	end = (NODE *)malloc(sizeof(NODE));
+	head->Next = end;
+	end->Next = end;
+}
+
+void Push(int num)
+{
+	ptrNode = (NODE *)malloc(sizeof(NODE));
+	ptrNode->Data = num;
+	ptrNode->Next = head->Next;
+	head->Next = ptrNode;
+}
+
+int Pop(void)
+{
+	int ret;
+	ptrNode = head->Next;
+	head->Next = head->Next->Next;
+
+}
+
+

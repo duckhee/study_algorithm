@@ -1,0 +1,33 @@
+/*
+ * queue3-13.c
+ *
+ *  Created on: 2018. 1. 30.
+ *      Author: CANDH
+ */
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX       100
+
+int Queue[MAX];
+int Front, Rear;
+
+void InitializeQueue(void);
+void Put(int);
+int Get(void);
+void DisplayQueue(void);
+
+void InitializeQueue(void)
+{
+	Front = Rear = 0;
+
+}
+
+void Put(int num)
+{
+
+}
