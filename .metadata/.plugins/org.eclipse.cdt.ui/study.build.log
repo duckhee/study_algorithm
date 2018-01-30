@@ -1,1 +1,5 @@
-Info: Nothing to build for study
+18:00:51 **** Clean-only build of configuration Debug for project study ****
+rm -rf src/stack4-4.d src/binary_tree4-5.d study.exe src/stack4-4.o src/binary_tree4-5.o 
+
+18:00:51 Build Finished (took 108ms)
+
