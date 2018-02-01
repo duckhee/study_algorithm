@@ -1,5 +1,5 @@
-18:00:51 **** Clean-only build of configuration Debug for project study ****
-rm -rf src/stack4-4.d src/binary_tree4-5.d study.exe src/stack4-4.o src/binary_tree4-5.o 
+12:37:43 **** Clean-only build of configuration Debug for project study ****
+rm -rf src/stack4-4.d src/binary_tree4-6.d study.exe src/stack4-4.o src/binary_tree4-6.o 
 
-18:00:51 Build Finished (took 108ms)
+12:37:43 Build Finished (took 103ms)
 

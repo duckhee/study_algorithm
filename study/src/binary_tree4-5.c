@@ -1,12 +1,3 @@
-/*
- * binary_tree4-5.c
- *
- *  Created on: 2018. 1. 30.
- *      Author: CANDH
- */
-
-
-
 #include "node4-3.h"
 
 
@@ -42,22 +33,32 @@ void MakeTree4_5(void)
 	printf("MakeTree4_5\n");
 	Parent = (NODE *)malloc(sizeof(NODE));
 	Parent->Data = 'A';
+	printf("A\n");
 
 	LeftChild = (NODE *)malloc(sizeof(NODE));
 	LeftChild->Data = 'B';
+	printf("B\n");
 
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'C';
 
+
 	Parent->Left = LeftChild;
 	Parent->Right = RightChild;
 
+	HeadNode->Left = Parent;
+	HeadNode->Right = Parent;
+
 	Parent = Parent->Left;
+
+	printf("C\n");
 
 	LeftChild = (NODE *)malloc(sizeof(NODE));
 	LeftChild->Data = 'D';
 	LeftChild->Left = EndNode;
 	LeftChild->Right = EndNode;
+
+	printf("D\n");
 
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'E';
@@ -68,10 +69,14 @@ void MakeTree4_5(void)
 	Parent->Right = RightChild;
 	Parent = HeadNode->Right->Right;
 
+	printf("E\n");
+
 	LeftChild = (NODE *)malloc(sizeof(NODE));
 	LeftChild->Data = 'F';
 	LeftChild->Left = EndNode;
 	LeftChild->Right = EndNode;
+
+	printf("F\n");
 
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'G';
@@ -81,15 +86,18 @@ void MakeTree4_5(void)
 	Parent->Left = LeftChild;
 	Parent->Right = RightChild;
 
+	printf("G\n");
+
 }
 
 void Traverse4_5(NODE *ptrNode)
 {
-	printf("Traverse4_5\n");
+
 	Push4_4(ptrNode);
 
 	while(!IsStackEmpty4_4())
 	{
+
 		ptrNode = Pop4_4();
 		Visit4_5(ptrNode);
 
@@ -108,7 +116,7 @@ void Traverse4_5(NODE *ptrNode)
 
 void Visit4_5(NODE *ptrNode)
 {
-	printf("Visit4_5\n");
+
 	printf("%2c -> ", ptrNode->Data);
 }
 
@@ -119,3 +127,4 @@ void main()
 	MakeTree4_5();
 	Traverse4_5(HeadNode->Left);
 }
+

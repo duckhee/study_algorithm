@@ -5,8 +5,8 @@
  *      Author: CANDH
  */
 
-#ifndef NODE4_3_H_
-#define NODE4_3_H_
+#ifndef NODEH_
+#define NODEH_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,4 +26,4 @@ NODE *HeadNode, *EndNode;
 
 
 
-#endif /* NODE4_3_H_ */
+#endif /* NODEH_ */
