@@ -23,8 +23,8 @@ void Push4_4(NODE *ptrNode)
 
 	Stack[Top] = ptrNode;
 
-
-	Top = (++Top)%MAX;
+	Top = (++Top)%MAX; //binary_tree 4-5
+	//Top = (Top++)%MAX;
 
 }
 

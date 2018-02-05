@@ -1,7 +1,7 @@
 /*
- * binary_tree4-6.c
+ * binart_tree4-7.c
  *
- *  Created on: 2018. 1. 31.
+ *  Created on: 2018. 2. 5.
  *      Author: CANDH
  */
 
@@ -15,16 +15,15 @@ extern void Push4_4(NODE *);
 extern NODE *Pop4_4(void);
 extern int IsStackEmpty4_4(void);
 
-void InitializeTree4_6(void);
-void MakeTree4_6(void);
-void Recursive_Traverse4_6(NODE *);
-void Stack_Traverse4_6(NODE *);
-void Visit4_6(NODE *);
+void InitializeTree4_7(void);
+void MakeTree4_7(void);
+void Recursive_Traverse4_7(NODE *);
+void Stack_Traverse4_7(NODE *);
+void Visit4_7(NODE *);
 
-NODE *Parent, *LeftChild, *RightChild;
-NODE *HeadNode, *EndNode;
+NODE *Parent, *LeftChild, *RightChild, *HeadNode, *EndNode;
 
-void InitializeTree4_6(void)
+void InitializeTree4_7(void)
 {
 	HeadNode = (NODE *)malloc(sizeof(NODE));
 	EndNode = (NODE *)malloc(sizeof(NODE));
@@ -32,32 +31,26 @@ void InitializeTree4_6(void)
 	HeadNode->Left = EndNode;
 	HeadNode->Right = EndNode;
 
-	EndNode->Left = EndNode;
 	EndNode->Right = EndNode;
+	EndNode->Left = EndNode;
 }
 
-void MakeTree4_6(void)
+void MakeTree4_7(void)
 {
 	Parent = (NODE *)malloc(sizeof(NODE));
 	Parent->Data = 'A';
 
-	printf("A\n");
-
 	LeftChild = (NODE *)malloc(sizeof(NODE));
 	LeftChild->Data = 'B';
-
-	printf("B\n");
 
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'C';
 
-	printf("C\n");
+	Parent->Left = LeftChild;
+	Parent->Right = RightChild;
 
 	HeadNode->Left = Parent;
 	HeadNode->Right = Parent;
-
-	Parent->Left = LeftChild;
-	Parent->Right = RightChild;
 
 	Parent = Parent->Left;
 
@@ -66,25 +59,20 @@ void MakeTree4_6(void)
 	LeftChild->Left = EndNode;
 	LeftChild->Right = EndNode;
 
-	printf("D\n");
-
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'E';
 	RightChild->Left = EndNode;
 	RightChild->Right = EndNode;
 
-	printf("E\n");
-
 	Parent->Left = LeftChild;
 	Parent->Right = RightChild;
+
 	Parent = Parent->Right->Right;
 
 	LeftChild = (NODE *)malloc(sizeof(NODE));
 	LeftChild->Data = 'F';
 	LeftChild->Left = EndNode;
-	LeftChild->Right = EndNode;
-
-	printf("F\n");
+	RightChild->Right = EndNode;
 
 	RightChild = (NODE *)malloc(sizeof(NODE));
 	RightChild->Data = 'G';
@@ -94,61 +82,83 @@ void MakeTree4_6(void)
 	Parent->Left = LeftChild;
 	Parent->Right = RightChild;
 
-	printf("G\n");
-
 }
 
-void Recursive_Traverse4_6(NODE *ptrNode)
+void Recursive_Traverse4_7(NODE *ptrNode)
 {
-	printf("Recursive_Traverse4_6\n;");
 	if(ptrNode != EndNode)
 	{
-		Recursive_Traverse4_6(ptrNode->Left);
-		Visit4_6(ptrNode);
-		Recursive_Traverse4_6(ptrNode->Right);
+		Recursive_Traverse4_7(ptrNode->Left);
+		Recursive_Traverse4_7(ptrNode->Right);
+		Visit4_7(ptrNode);
 	}
 }
 
-void Stack_Traverse4_6(NODE *ptrNode)
+void Stack_Traverse4_7(NODE *ptrNode)
 {
-	printf("Stack_Traverse4_6\n");
 	int Finish = 0;
+	NODE *ptrVisited = EndNode;
+	NODE *ptrPushed = EndNode;
+
 	do
 	{
-		while(ptrNode != EndNode)
+		while(ptrNode != EndNode && ptrNode != ptrVisited)
 		{
-			Push4_4(ptrNode);
+			if(ptrNode->Right != EndNode)
+			{
+				Push4_4(ptrNode->Right);
+			}
+
+			if(ptrNode->Left != EndNode)
+			{
+				Push4_4(ptrNode->Left);
+			}
+
+			ptrPushed = ptrNode->Left;
 			ptrNode = ptrNode->Left;
 		}
 
 		if(!IsStackEmpty4_4())
 		{
 			ptrNode = Pop4_4();
-			Visit4_6(ptrNode);
-			ptrNode = ptrNode->Right;
+
+			if(ptrNode->Left != EndNode && ptrNode->Right == EndNode && ptrNode->Left != ptrVisited)
+			{
+				Push4_4(ptrNode);
+				ptrNode = ptrNode->Left;
+			}
+
+			if(ptrNode->Right == EndNode || ptrNode->Right == ptrVisited)
+			{
+				Visit4_7(ptrNode);
+				ptrVisited = ptrNode;
+			}
 		}
 		else
 		{
 			Finish = 1;
+
 		}
 	}while(!Finish);
 }
 
-void Visit4_6(NODE *ptrNode)
+void Visit4_7(NODE *ptrNode)
 {
-	printf("Visit4_6\n");
 	printf("%2c -> ", ptrNode->Data);
+
 }
 
 void main()
 {
 	InitializeStack4_4();
-	InitializeTree4_6();
-	MakeTree4_6();
+	InitializeTree4_7();
+	MakeTree4_7();
+	printf("재귀 호출을 사용한 후위 순회 : ");
 
-	printf("재귀 호출을 사용한 중위 순회 : ");
-	//Recursive_Traverse4_6(HeadNode->Left);
-	printf("\n스텍을 이용한 주위 순회 : ");
-	Stack_Traverse4_6(HeadNode->Left);
+	Recursive_Traverse4_7(HeadNode->Left);
+
+	printf("\n 스택을 사용한 후위 순회 : ");
+
+	Stack_Traverse4_7(HeadNode->Left);
 
 }
