@@ -117,12 +117,14 @@ void Stack_Traverse4_6(NODE *ptrNode)
 	{
 		while(ptrNode != EndNode)
 		{
+			printf("left\n");
 			Push4_4(ptrNode);
 			ptrNode = ptrNode->Left;
 		}
 
 		if(!IsStackEmpty4_4())
 		{
+			printf("right\n");
 			ptrNode = Pop4_4();
 			Visit4_6(ptrNode);
 			ptrNode = ptrNode->Right;

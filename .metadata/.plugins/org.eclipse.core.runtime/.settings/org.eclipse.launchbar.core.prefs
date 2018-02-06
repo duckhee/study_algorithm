@@ -1,9 +1,11 @@
 LaunchTargetManager/configs/exam.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/sort.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/study.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/test=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:exam.exe,org.eclipse.launchbar.core.descriptorType.default\:study.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:exam.exe,org.eclipse.cdt.debug.core.coreBuildDescriptorType\:test,org.eclipse.launchbar.core.descriptorType.default\:study.exe,org.eclipse.launchbar.core.descriptorType.default\:sort.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:exam.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:exam.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -13,25 +13,25 @@ int IsStackEmpty4_4(void);
 
 void InitializeStack4_4(void)
 {
-
+	printf("initializestack\n");
 	Top = 0;
 }
 
 void Push4_4(NODE *ptrNode)
 {
-
+	printf("push\n");
 
 	Stack[Top] = ptrNode;
 
-	Top = (++Top)%MAX; //binary_tree 4-5
-	//Top = (Top++)%MAX;
+	//Top = (++Top)%MAX; //binary_tree 4-5
+	Top = (Top++)%MAX;
 
 }
 
 
 NODE *Pop4_4(void)
 {
-
+	printf("pop\n");
 	NODE *ptrNode;
 
 	if(!IsStackEmpty4_4())
@@ -50,7 +50,7 @@ NODE *Pop4_4(void)
 
 int IsStackEmpty4_4(void)
 {
-
+	printf("isstackempty\n");
 	if(Top == 0)
 	{
 
