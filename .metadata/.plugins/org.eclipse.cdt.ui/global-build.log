@@ -1,417 +1,129 @@
-11:00:18 **** Incremental Build of configuration Debug for project study ****
+14:27:05 **** Rebuild of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer2-5.o" "..\\src\\pointer2-5.c" 
-..\src\pointer2-5.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-g++ -o study.exe "src\\pointer2-5.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-Info: Nothing to build for study
-11:16:36 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+Info: Nothing to build for exam
+14:27:18 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer2-6.o" "..\\src\\pointer2-6.c" 
-..\src\pointer2-6.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main(void)
-      ^~~~
-g++ -o study.exe "src\\pointer2-6.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-11:18:52 **** Incremental Build of configuration Debug for project study ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer2-7.o" "..\\src\\pointer2-7.c" 
-..\src\pointer2-7.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer2-7.c: In function 'main':
-..\src\pointer2-7.c:18:2: warning: 'ptr' is used uninitialized in this function [-Wuninitialized]
-  printf("ptr : 0x%p, *ptr : %d\n", ptr, *ptr);
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-g++ -o study.exe "src\\pointer2-7.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-11:20:41 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:27:37 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer2-8.o" "..\\src\\pointer2-8.c" 
-..\src\pointer2-8.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+g++ -o exam.exe "src\\examp_1.o" 
+14:28:12 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer2-8.c: In function 'main':
-..\src\pointer2-8.c:17:7: warning: 'ptr' is used uninitialized in this function [-Wuninitialized]
-  *ptr = data;
-  ~~~~~^~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-g++ -o study.exe "src\\pointer2-8.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-12:44:00 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:28:25 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-9.o" "..\\src\\pointer_array2-9.c" 
-..\src\pointer_array2-9.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-g++ -o study.exe "src\\pointer_array2-9.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-12:45:31 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:28:41 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-10.o" "..\\src\\pointer_array2-10.c" 
-..\src\pointer_array2-10.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-g++ -o study.exe "src\\pointer_array2-10.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-12:47:38 **** Incremental Build of configuration Debug for project study ****
+..\src\examp_1.c: In function 'main':
+..\src\examp_1.c:16:13: error: empty character constant
+  char key = '';
+             ^~
+14:29:00 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-11.o" "..\\src\\pointer_array2-11.c" 
-..\src\pointer_array2-11.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer_array2-11.c: In function 'main':
-..\src\pointer_array2-11.c:28:7: error: lvalue required as increment operand
-   data++;
-       ^~
-12:50:52 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:29:08 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-12.o" "..\\src\\pointer_array2-12.c" 
-..\src\pointer_array2-12.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-g++ -o study.exe "src\\pointer_array2-12.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-12:56:13 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:29:16 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-13.o" "..\\src\\pointer_array2-13.c" 
-..\src\pointer_array2-13.c:27:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\examp_1.o" "..\\src\\examp_1.c" 
+..\src\examp_1.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer_array2-13.c: In function 'main':
-..\src\pointer_array2-13.c:29:9: warning: unused variable 'j' [-Wunused-variable]
-  int i, j;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-g++ -o study.exe "src\\pointer_array2-13.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-12:59:13 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\examp_1.o" 
+14:33:06 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-14.o" "..\\src\\pointer_array2-14.c" 
-..\src\pointer_array2-14.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_2.o" "..\\src\\exam_2.c" 
+..\src\exam_2.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer_array2-14.c: In function 'main':
-..\src\pointer_array2-14.c:29:3: warning: implicit declaration of function 'ptirntf' [-Wimplicit-function-declaration]
-   ptirntf("ptr : 0x%p, **ptr : %d, *(*ptr+1) : %d\n", ptr, **ptr, *(*ptr+1));
-   ^~~~~~~
-..\src\pointer_array2-14.c:18:7: warning: variable 'tptr' set but not used [-Wunused-but-set-variable]
-  int *tptr[5];
-       ^~~~
-..\src\pointer_array2-14.c:15:9: warning: unused variable 'j' [-Wunused-variable]
-  int i, j;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-g++ -o study.exe "src\\pointer_array2-14.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-src\pointer_array2-14.o: In function `main':
-C:\Users\CANDH\Desktop\알고리즘 공부\study\Debug/../src/pointer_array2-14.c:29: undefined reference to `ptirntf'
-collect2.exe: error: ld returned 1 exit status
-12:59:40 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\exam_2.o" 
+14:37:50 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-14.o" "..\\src\\pointer_array2-14.c" 
-..\src\pointer_array2-14.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3.o" "..\\src\\exam_3.c" 
+..\src\exam_3.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer_array2-14.c: In function 'main':
-..\src\pointer_array2-14.c:18:7: warning: variable 'tptr' set but not used [-Wunused-but-set-variable]
-  int *tptr[5];
-       ^~~~
-..\src\pointer_array2-14.c:15:9: warning: unused variable 'j' [-Wunused-variable]
-  int i, j;
-         ^
-g++ -o study.exe "src\\pointer_array2-14.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-14:00:45 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\exam_3.o" 
+14:41:23 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_array2-15.o" "..\\src\\pointer_array2-15.c" 
-..\src\pointer_array2-15.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3-2.o" "..\\src\\exam_3-2.c" 
+..\src\exam_3-2.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\src\pointer_array2-15.c: In function 'main':
-..\src\pointer_array2-15.c:30:45: warning: operation on 'ptr' may be undefined [-Wsequence-point]
-  printf("ptr : 0x%p, *ptr : %c\n", ptr, *ptr++);
-                                          ~~~^~
-..\src\pointer_array2-15.c:33:46: warning: operation on 'ptr' may be undefined [-Wsequence-point]
-  printf("ptr : 0x%p, *ptr : %c\n", ptr, *(ptr++));
-                                          ~~~~^~~
-..\src\pointer_array2-15.c:37:46: warning: operation on 'ptr' may be undefined [-Wsequence-point]
-  printf("ptr : 0x%p, *ptr : %c\n", ptr, *(ptr++));
-                                          ~~~~^~~
-..\src\pointer_array2-15.c:41:19: warning: unknown conversion type character '[' in format [-Wformat=]
-  printf("ptr : 0x%[, *ptr : %c\n", ptr, *ptr);
-                   ^
-..\src\pointer_array2-15.c:41:30: warning: format '%c' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
-  printf("ptr : 0x%[, *ptr : %c\n", ptr, *ptr);
-                              ^
-..\src\pointer_array2-15.c:41:9: warning: too many arguments for format [-Wformat-extra-args]
-  printf("ptr : 0x%[, *ptr : %c\n", ptr, *ptr);
-         ^~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-g++ -o study.exe "src\\pointer_array2-15.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-14:05:37 **** Incremental Build of configuration Debug for project study ****
+g++ -o exam.exe "src\\exam_3-2.o" 
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+14:42:47 **** Incremental Build of configuration Debug for project exam ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
-..\src\queue4_10.c: In function 'Put4_10':
-..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++)%MAX;
-       ^
-..\src\queue4_10.c: In function 'Get4_10':
-..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++)%MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
-..\src\queue5-3.c: In function 'Put5_2':
-..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
-  Rear = (Rear++) % MAX;
-       ^
-..\src\queue5-3.c: In function 'Get5_2':
-..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
-   Front = (Front++) % MAX;
-         ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
-..\src\stack4-4.c: In function 'Push4_4':
-..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
-  Top = (Top++)%MAX;
-      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\call_by_refernce_pointer2-16.o" "..\\src\\call_by_refernce_pointer2-16.c" 
-..\src\call_by_refernce_pointer2-16.c:27:6: warning: return type of 'main' is not 'int' [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3-2.o" "..\\src\\exam_3-2.c" 
+..\src\exam_3-2.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-g++ -o study.exe "src\\call_by_refernce_pointer2-16.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
+g++ -o exam.exe "src\\exam_3-2.o" 
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+Info: Nothing to build for exam
+14:47:12 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3-3.o" "..\\src\\exam_3-3.c" 
+..\src\exam_3-3.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam_3-3.o" 
+14:47:37 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3-3.o" "..\\src\\exam_3-3.c" 
+..\src\exam_3-3.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam_3-3.o" 
+Info: Nothing to build for exam
+14:48:13 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_3-3.o" "..\\src\\exam_3-3.c" 
+..\src\exam_3-3.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam_3-3.o" 
+14:59:23 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+..\src\exam4.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam4.o" 
