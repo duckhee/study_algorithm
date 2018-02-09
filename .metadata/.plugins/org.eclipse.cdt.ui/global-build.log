@@ -195,3 +195,55 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_8.o" "..\\src\\exam_8.c"
  void main()
       ^~~~
 g++ -o exam.exe "src\\exam_8.o" 
+16:08:19 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\problem1.o" "..\\src\\problem1.c" 
+g++ -o exam.exe "src\\problem1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+16:08:30 **** Incremental Build of configuration Debug for project study ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
+..\src\queue5-3.c: In function 'Put5_2':
+..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
+  Rear = (Rear++) % MAX;
+       ^
+..\src\queue5-3.c: In function 'Get5_2':
+..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
+   Front = (Front++) % MAX;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
+..\src\queue4_10.c: In function 'Put4_10':
+..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
+  Rear = (Rear++)%MAX;
+       ^
+..\src\queue4_10.c: In function 'Get4_10':
+..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
+   Front = (Front++)%MAX;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\avr_tree5-4.o" "..\\src\\avr_tree5-4.c" 
+..\src\avr_tree5-4.c:193:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void)
+      ^~~~
+..\src\avr_tree5-4.c: In function 'main':
+..\src\avr_tree5-4.c:198:2: warning: implicit declaration of function 'InsertNode' [-Wimplicit-function-declaration]
+  InsertNode(10);
+  ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
+..\src\stack4-4.c: In function 'Push4_4':
+..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
+  Top = (Top++)%MAX;
+      ^
+g++ -o study.exe "src\\avr_tree5-4.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
+src\avr_tree5-4.o: In function `main':
+C:\Users\CANDH\Desktop\알고리즘 공부\study\Debug/../src/avr_tree5-4.c:198: undefined reference to `InsertNode'
+C:\Users\CANDH\Desktop\알고리즘 공부\study\Debug/../src/avr_tree5-4.c:199: undefined reference to `InsertNode'
+C:\Users\CANDH\Desktop\알고리즘 공부\study\Debug/../src/avr_tree5-4.c:203: undefined reference to `InsertNode'
+collect2.exe: error: ld returned 1 exit status
+16:08:53 **** Incremental Build of configuration Debug for project study ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\avr_tree5-4.o" "..\\src\\avr_tree5-4.c" 
+..\src\avr_tree5-4.c:193:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void)
+      ^~~~
+g++ -o study.exe "src\\avr_tree5-4.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
