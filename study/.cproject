@@ -41,7 +41,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="binary_tree4-11.c|binary_tree4-6.c|binary_tree4-7.c|binart_tree4-7.c|binary_tree4-5.c|queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="pointer_array2-15.c|pointer_array2-14.c|pointer_array2-13.c|pointer_array2-12.c|pointer_array2-11.c|pointer_array2-10.c|pointer_array2-9.c|pointer2-8.c|pointer2-7.c|pointer2-6.c|pointer2-5.c|avr_tree5-4.c|binary_tree4-11.c|binary_tree4-6.c|binary_tree4-7.c|binart_tree4-7.c|binary_tree4-5.c|queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -87,7 +87,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="binary_tree4-11.c|binary_tree4-6.c|binary_tree4-7.c|binart_tree4-7.c|binary_tree4-5.c|queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="pointer_array2-15.c|pointer_array2-14.c|pointer_array2-13.c|pointer_array2-12.c|pointer_array2-11.c|pointer_array2-10.c|pointer_array2-9.c|pointer2-8.c|pointer2-7.c|pointer2-6.c|pointer2-5.c|avr_tree5-4.c|binary_tree4-11.c|binary_tree4-6.c|binary_tree4-7.c|binart_tree4-7.c|binary_tree4-5.c|queue3-14.c|queue3-13.c|stack3-12.c|double_link_list3-7.c|link_list3-5.c|link_list3-1.c|link_list3-2.c|link_list2.c|link_list.c|study.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

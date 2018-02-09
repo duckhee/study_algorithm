@@ -185,7 +185,7 @@ void Put7_2(int index, int num)
 	}
 	else
 	{
-		Rear[index]->Next->Next = ptrNode;
+		//Rear[index]->Next->Next = ptrNode;
 		ptrNode->Next = Rear[index];
 		Rear[index]->Next = ptrNode;
 	}

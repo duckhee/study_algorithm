@@ -1,4 +1,4 @@
-17:34:23 **** Rebuild of configuration Debug for project study ****
+14:05:37 **** Incremental Build of configuration Debug for project study ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
 ..\src\queue4_10.c: In function 'Put4_10':
@@ -10,14 +10,24 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_1
    Front = (Front++)%MAX;
          ^
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
+..\src\queue5-3.c: In function 'Put5_2':
+..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
+  Rear = (Rear++) % MAX;
+       ^
+..\src\queue5-3.c: In function 'Get5_2':
+..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
+   Front = (Front++) % MAX;
+         ^
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
 ..\src\stack4-4.c: In function 'Push4_4':
 ..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
   Top = (Top++)%MAX;
       ^
-g++ -o study.exe "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
-collect2.exe: error: ld returned 1 exit status
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\call_by_refernce_pointer2-16.o" "..\\src\\call_by_refernce_pointer2-16.c" 
+..\src\call_by_refernce_pointer2-16.c:27:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o study.exe "src\\call_by_refernce_pointer2-16.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
 
-17:34:24 Build Finished (took 906ms)
+14:05:38 Build Finished (took 967ms)
 
