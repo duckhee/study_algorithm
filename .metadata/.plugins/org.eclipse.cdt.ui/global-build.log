@@ -127,3 +127,71 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c"
  void main()
       ^~~~
 g++ -o exam.exe "src\\exam4.o" 
+15:12:15 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_5.o" "..\\src\\exam_5.c" 
+..\src\exam_5.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam_5.o" 
+Info: Nothing to build for exam
+15:16:06 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_6.o" "..\\src\\exam_6.c" 
+..\src\exam_6.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\exam_6.c: In function 'main':
+..\src\exam_6.c:16:7: warning: unused variable 'sum' [-Wunused-variable]
+  long sum = 0;
+       ^~~
+g++ -o exam.exe "src\\exam_6.o" 
+15:17:16 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_6.o" "..\\src\\exam_6.c" 
+..\src\exam_6.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\exam_6.c: In function 'main':
+..\src\exam_6.c:16:7: warning: unused variable 'sum' [-Wunused-variable]
+  long sum = 0;
+       ^~~
+g++ -o exam.exe "src\\exam_6.o" 
+15:22:06 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_7.o" "..\\src\\exam_7.c" 
+..\src\exam_7.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\exam_7.c: In function 'main':
+..\src\exam_7.c:17:6: warning: unused variable 'MInteger' [-Wunused-variable]
+  int MInteger;
+      ^~~~~~~~
+g++ -o exam.exe "src\\exam_7.o" 
+15:26:55 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_8.o" "..\\src\\exam_8.c" 
+..\src\exam_8.c:31:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\exam_8.c: In function 'main':
+..\src\exam_8.c:41:15: warning: passing argument 1 of 'gcd' makes integer from pointer without a cast [-Wint-conversion]
+  result = gcd(&num1, &num2);
+               ^
+..\src\exam_8.c:15:5: note: expected 'int' but argument is of type 'int *'
+ int gcd(int x, int y)
+     ^~~
+..\src\exam_8.c:41:22: warning: passing argument 2 of 'gcd' makes integer from pointer without a cast [-Wint-conversion]
+  result = gcd(&num1, &num2);
+                      ^
+..\src\exam_8.c:15:5: note: expected 'int' but argument is of type 'int *'
+ int gcd(int x, int y)
+     ^~~
+g++ -o exam.exe "src\\exam_8.o" 
+15:27:55 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam_8.o" "..\\src\\exam_8.c" 
+..\src\exam_8.c:31:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\exam_8.o" 

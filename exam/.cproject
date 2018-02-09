@@ -41,7 +41,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="exam4.c|exam_3-3.c|exam_3-2.c|exam_1.c|exam_2.c|examp_1.c|exam.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="exam_8.c|exam_7.c|exam_6.c|exam_4.c|exam_5.c|exam4.c|exam_3-3.c|exam_3-2.c|exam_1.c|exam_2.c|examp_1.c|exam.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -87,7 +87,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="exam4.c|exam_3-3.c|exam_3-2.c|exam_1.c|exam_2.c|examp_1.c|exam.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="exam_8.c|exam_7.c|exam_6.c|exam_4.c|exam_5.c|exam4.c|exam_3-3.c|exam_3-2.c|exam_1.c|exam_2.c|examp_1.c|exam.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
