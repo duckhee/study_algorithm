@@ -247,3 +247,261 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\avr_tree5-4.o" "..\\src\\avr_tr
  void main(void)
       ^~~~
 g++ -o study.exe "src\\avr_tree5-4.o" "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
+10:03:22 **** Incremental Build of configuration Debug for project study ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue5-3.o" "..\\src\\queue5-3.c" 
+..\src\queue5-3.c: In function 'Put5_2':
+..\src\queue5-3.c:30:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
+  Rear = (Rear++) % MAX;
+       ^
+..\src\queue5-3.c: In function 'Get5_2':
+..\src\queue5-3.c:40:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
+   Front = (Front++) % MAX;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\queue4_10.o" "..\\src\\queue4_10.c" 
+..\src\queue4_10.c: In function 'Put4_10':
+..\src\queue4_10.c:35:7: warning: operation on 'Rear' may be undefined [-Wsequence-point]
+  Rear = (Rear++)%MAX;
+       ^
+..\src\queue4_10.c: In function 'Get4_10':
+..\src\queue4_10.c:46:9: warning: operation on 'Front' may be undefined [-Wsequence-point]
+   Front = (Front++)%MAX;
+         ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack4-4.o" "..\\src\\stack4-4.c" 
+..\src\stack4-4.c: In function 'Push4_4':
+..\src\stack4-4.c:27:6: warning: operation on 'Top' may be undefined [-Wsequence-point]
+  Top = (Top++)%MAX;
+      ^
+g++ -o study.exe "src\\queue4_10.o" "src\\queue5-3.o" "src\\stack4-4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+10:03:37 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\problem1.o" "..\\src\\problem1.c" 
+..\src\problem1.c: In function 'input_data':
+..\src\problem1.c:27:2: warning: implicit declaration of function 'fsacnf' [-Wimplicit-function-declaration]
+  fsacnf(inf, "%d\n", &N);
+  ^~~~~~
+..\src\problem1.c: In function 'solve':
+..\src\problem1.c:50:2: warning: implicit declaration of function 'initalize_S' [-Wimplicit-function-declaration]
+  initalize_S();
+  ^~~~~~~~~~~
+..\src\problem1.c: At top level:
+..\src\problem1.c:75:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\problem1.o" 
+src\problem1.o: In function `input_data':
+C:\Users\CANDH\Desktop\알고리즘 공부\exam\Debug/../src/problem1.c:27: undefined reference to `fsacnf'
+src\problem1.o: In function `solve':
+C:\Users\CANDH\Desktop\알고리즘 공부\exam\Debug/../src/problem1.c:50: undefined reference to `initalize_S'
+collect2.exe: error: ld returned 1 exit status
+10:04:02 **** Incremental Build of configuration Debug for project exam ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\problem1.o" "..\\src\\problem1.c" 
+..\src\problem1.c:75:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o exam.exe "src\\problem1.o" 
+Info: Nothing to build for exam
+12:53:42 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c: In function 'MakeRandomNumber8_1':
+..\src\binary_search_short8-1.c:36:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if(!IsNumberExit8_1(Num, i));
+   ^~
+..\src\binary_search_short8-1.c:37:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+   {
+   ^
+..\src\binary_search_short8-1.c: At top level:
+..\src\binary_search_short8-1.c:131:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-1.o" 
+12:57:57 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c: In function 'MakeRandomNumber8_1':
+..\src\binary_search_short8-1.c:36:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if(!IsNumberExit8_1(Num, i));
+   ^~
+..\src\binary_search_short8-1.c:37:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+   {
+   ^
+..\src\binary_search_short8-1.c: In function 'QuickSort8_1':
+..\src\binary_search_short8-1.c:55:4: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+    while(data[++i] < num);
+    ^~~~~
+..\src\binary_search_short8-1.c:57:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+     while(data[--j] > num);
+     ^~~~~
+..\src\binary_search_short8-1.c:57:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+..\src\binary_search_short8-1.c:59:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      if(i >= j)
+      ^~
+..\src\binary_search_short8-1.c: At top level:
+..\src\binary_search_short8-1.c:131:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-1.o" 
+16:17:13 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c: In function 'MakeRandomNumber8_1':
+..\src\binary_search_short8-1.c:26:7: error: too few arguments to function 'IsNumberExit8_1'
+   if(!IsNumberExit8_1())
+       ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c:12:5: note: declared here
+ int IsNumberExit8_1(int, int);
+     ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c: At top level:
+..\src\binary_search_short8-1.c:124:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+16:17:19 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c: In function 'MakeRandomNumber8_1':
+..\src\binary_search_short8-1.c:26:7: error: too few arguments to function 'IsNumberExit8_1'
+   if(!IsNumberExit8_1())
+       ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c:12:5: note: declared here
+ int IsNumberExit8_1(int, int);
+     ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c: At top level:
+..\src\binary_search_short8-1.c:124:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+16:17:20 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c: In function 'MakeRandomNumber8_1':
+..\src\binary_search_short8-1.c:26:7: error: too few arguments to function 'IsNumberExit8_1'
+   if(!IsNumberExit8_1())
+       ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c:12:5: note: declared here
+ int IsNumberExit8_1(int, int);
+     ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-1.c: At top level:
+..\src\binary_search_short8-1.c:124:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+16:17:53 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c:124:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-1.o" 
+Info: Nothing to build for sort
+16:19:37 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-1.o" "..\\src\\binary_search_short8-1.c" 
+..\src\binary_search_short8-1.c:124:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-1.o" 
+Info: Nothing to build for sort
+16:20:08 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-2.o" "..\\src\\binary_search_short8-2.c" 
+..\src\binary_search_short8-2.c: In function 'MakeRandomNumber8_2':
+..\src\binary_search_short8-2.c:36:7: warning: implicit declaration of function 'IsNumberExit8_1' [-Wimplicit-function-declaration]
+   if(!IsNumberExit8_1(Num, i));
+       ^~~~~~~~~~~~~~~
+..\src\binary_search_short8-2.c:36:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if(!IsNumberExit8_1(Num, i));
+   ^~
+..\src\binary_search_short8-2.c:37:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+   {
+   ^
+..\src\binary_search_short8-2.c: In function 'QuickSort8_2':
+..\src\binary_search_short8-2.c:55:4: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+    while(data[++i] < num);
+    ^~~~~
+..\src\binary_search_short8-2.c:56:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+     while(data[--j] > num);
+     ^~~~~
+..\src\binary_search_short8-2.c:56:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+..\src\binary_search_short8-2.c:57:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      if(i >= j)
+      ^~
+..\src\binary_search_short8-2.c:67:3: warning: implicit declaration of function 'QuickSort8_1' [-Wimplicit-function-declaration]
+   QuickSort8_1(data, left, i-1);
+   ^~~~~~~~~~~~
+..\src\binary_search_short8-2.c: At top level:
+..\src\binary_search_short8-2.c:127:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-2.o" 
+src\binary_search_short8-2.o: In function `MakeRandomNumber8_2':
+C:\Users\CANDH\Desktop\알고리즘 공부\sort\Debug/../src/binary_search_short8-2.c:36: undefined reference to `IsNumberExit8_1'
+src\binary_search_short8-2.o: In function `QuickSort8_2':
+C:\Users\CANDH\Desktop\알고리즘 공부\sort\Debug/../src/binary_search_short8-2.c:67: undefined reference to `QuickSort8_1'
+C:\Users\CANDH\Desktop\알고리즘 공부\sort\Debug/../src/binary_search_short8-2.c:68: undefined reference to `QuickSort8_1'
+collect2.exe: error: ld returned 1 exit status
+16:20:26 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-2.o" "..\\src\\binary_search_short8-2.c" 
+..\src\binary_search_short8-2.c: In function 'MakeRandomNumber8_2':
+..\src\binary_search_short8-2.c:36:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   if(!IsNumberExit8_2(Num, i));
+   ^~
+..\src\binary_search_short8-2.c:37:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+   {
+   ^
+..\src\binary_search_short8-2.c: In function 'QuickSort8_2':
+..\src\binary_search_short8-2.c:55:4: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+    while(data[++i] < num);
+    ^~~~~
+..\src\binary_search_short8-2.c:56:5: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+     while(data[--j] > num);
+     ^~~~~
+..\src\binary_search_short8-2.c:56:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+..\src\binary_search_short8-2.c:57:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      if(i >= j)
+      ^~
+..\src\binary_search_short8-2.c: At top level:
+..\src\binary_search_short8-2.c:127:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\binary_search_short8-2.o" 
+16:51:28 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-3.o" "..\\src\\binary_search_short8-3.c" 
+..\src\binary_search_short8-3.c: In function 'QuickSort8_3':
+..\src\binary_search_short8-3.c:69:3: warning: implicit declaration of function 'fir' [-Wimplicit-function-declaration]
+   fir(; ;)
+   ^~~
+..\src\binary_search_short8-3.c:69:7: error: expected expression before ';' token
+   fir(; ;)
+       ^
+..\src\binary_search_short8-3.c:70:3: error: expected ';' before '{' token
+   {
+   ^
+..\src\binary_search_short8-3.c:61:14: warning: variable 'j' set but not used [-Wunused-but-set-variable]
+  int num, i, j, temp;
+              ^
+..\src\binary_search_short8-3.c:61:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num, i, j, temp;
+      ^~~
+..\src\binary_search_short8-3.c: At top level:
+..\src\binary_search_short8-3.c:222:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\binary_search_short8-3.c: In function 'main':
+..\src\binary_search_short8-3.c:224:9: warning: unused variable 'ret' [-Wunused-variable]
+  int i, ret;
+         ^~~
+16:52:20 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-3.o" "..\\src\\binary_search_short8-3.c" 
+..\src\binary_search_short8-3.c:222:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\src\binary_search_short8-3.c: In function 'main':
+..\src\binary_search_short8-3.c:224:9: warning: unused variable 'ret' [-Wunused-variable]
+  int i, ret;
+         ^~~
+g++ -o sort.exe "src\\binary_search_short8-3.o" 
