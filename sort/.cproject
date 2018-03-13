@@ -41,7 +41,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="binary_search_short8-3.c|binary_search_short8-2.c|binary_search_short8-1.c|hip_short7-4.c|parallel_short7-3.c|radix_sort7-2.c|quick_sort7-1.c|cell_sort6-4.c|bubble_sort6-3.c|insert_sort6_2.c|select_sort6_1.c|sort.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="hash_short9-2.c|hash_short9-1.c|binary_search_short8-3.c|binary_search_short8-2.c|binary_search_short8-1.c|hip_short7-4.c|parallel_short7-3.c|radix_sort7-2.c|quick_sort7-1.c|cell_sort6-4.c|bubble_sort6-3.c|insert_sort6_2.c|select_sort6_1.c|sort.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -87,7 +87,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="binary_search_short8-3.c|binary_search_short8-2.c|binary_search_short8-1.c|hip_short7-4.c|parallel_short7-3.c|radix_sort7-2.c|quick_sort7-1.c|cell_sort6-4.c|bubble_sort6-3.c|insert_sort6_2.c|select_sort6_1.c|sort.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="hash_short9-2.c|hash_short9-1.c|binary_search_short8-3.c|binary_search_short8-2.c|binary_search_short8-1.c|hip_short7-4.c|parallel_short7-3.c|radix_sort7-2.c|quick_sort7-1.c|cell_sort6-4.c|bubble_sort6-3.c|insert_sort6_2.c|select_sort6_1.c|sort.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

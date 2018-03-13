@@ -505,3 +505,31 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\binary_search_short8-3.o" "..\\
   int i, ret;
          ^~~
 g++ -o sort.exe "src\\binary_search_short8-3.o" 
+17:13:03 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hash_short9-1.o" "..\\src\\hash_short9-1.c" 
+..\src\hash_short9-1.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\hash_short9-1.o" 
+17:13:16 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hash_short9-1.o" "..\\src\\hash_short9-1.c" 
+..\src\hash_short9-1.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\hash_short9-1.o" 
+17:17:30 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hash_short9-2.o" "..\\src\\hash_short9-2.c" 
+..\src\hash_short9-2.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\hash_short9-2.o" 
+17:31:08 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hash_shotr9-3.o" "..\\src\\hash_shotr9-3.c" 
+..\src\hash_shotr9-3.c:118:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+g++ -o sort.exe "src\\hash_shotr9-3.o" 
